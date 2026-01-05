@@ -1,0 +1,377 @@
+/* import fonts from font.css */
+@import url(./fonts.css);
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+.block{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+/* Start navbar */
+
+body {
+
+    padding: 40px 0;
+
+}
+
+.navbar-brand {
+    padding: 0 2rem 0 5rem;
+}
+
+.header-area.main-menu.navbar {
+    padding: 1rem 20rem;
+}
+
+.nav-link {
+    font-family: "Roboto", cursive;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 1.5rem;
+    color: black;
+}
+
+.hero-para {
+    margin-bottom: 2rem;
+}
+
+.navbar-nav {
+    padding-right: 2rem;
+}
+
+
+.nav-link {
+    color: #344054;
+    font-weight: 500;
+    font-family: "Roboto", cursive;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+.nav-link:hover {
+    color: #FD853A;
+}
+
+.active {
+    color: #FD853A;
+}
+
+/* End Navbar */
+
+
+
+/* Start of hero section */
+
+.primary-button {
+    padding: 0.5rem 1rem;
+    background-color: #FD853A;
+    font-weight: 400;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-family: "Roboto", cursive;
+    transition: all 0.5s ease;
+    margin-right: 1.5rem;
+    border: solid 2px #FD853A;
+    height: 46px;
+    box-shadow: 0px 0px 20px 0px rgba(253, 133, 58, 0.5);
+
+}
+
+.primary-button:hover {
+
+    background-color: transparent;
+    color: #FD853A;
+    border: solid 2px #FD853A;
+
+}
+
+.secondary-button {
+
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    font-weight: 400;
+    color: #FD853A;
+    border-radius: 10px;
+    font-family: "Roboto", cursive;
+    transition: 0.5s;
+    border: solid 2px #FD853A;
+}
+
+.secondary-button:hover {
+
+    background-color: #FD853A;
+    color: whitesmoke;
+
+}
+
+.text {
+    font-family: "Roboto", cursive;
+
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #FFF;
+    border-radius: .25rem;
+}
+.btn-view{
+    border: none;
+    background-color: #fff;
+    border-bottom: solid 3px #fd853a;
+}
+.btn-underline{
+    padding-bottom: 15px;
+    border: none;
+    background-color: #fff;
+    /* border-bottom: solid 3px #fd853a; */
+}
+.hero-text {
+    font: none;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FD853A;
+}
+
+.hero-subtext {
+    font: none;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.hero-img {
+
+    width: 70%;
+
+}
+
+/* End of hero section */
+
+
+/* About Section */
+
+.about {
+    padding-top: 2rem;
+}
+
+.about-image {
+    /* height: 80%; */
+    width: 100%;
+}
+
+.header-about {
+    color: #344054;
+    font-size: 65px;
+    font-weight: 600;
+
+}
+
+/* About Section */
+.hero-text{
+    font-size: 50px;
+    font-weight: 700;
+    color: #344054;
+}
+
+.imp-text{
+    font-size: 50px;
+    font-weight: 700;
+    color:#FD853A;
+}
+.box-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    height: 95%;              /* fixed height */
+    width: 100%;                /* takes full width of Bootstrap column */
+    margin-bottom: 20px;
+    border: 1px solid #F2F2F2;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.box-card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.header-text{
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FD853A;
+    padding: 10px 15px;
+    border-radius: 100%;
+    height: fit-content;
+    width: fit-content;
+    border: solid 1px #FD853A;
+}
+
+
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+    background-color: #fff3e6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    background-color: #ff8c00;
+    border-radius: 5px;
+    position: relative;
+}
+.sub-text {
+    font-size: 14px;
+    color: #5D6676;
+    font-weight: 400;
+}
+.icon::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 8px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.icon::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 15px;
+    height: 6px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.box-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.box-card p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* End About Section */
+
+.card{
+
+    margin-bottom: 1rem;
+    
+}
+
+
+.contact-card{
+    padding: 15px;
+    border: 1px solid #F6F6F6;
+    border-radius: 15px;
+    /* box-shadow: 0px 30px 116px -16px #D3D3D34D; */
+    min-width: 300px;
+}
+
+.value{
+    color: #344054;
+}
+
+.label{
+    color: #5D6676;
+}
+
+input {
+  background: transparent;
+  border-radius: 10px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 50px;
+  width: 100%;
+  height: 52px;
+  border: 1px solid #BEC0BF;
+  box-shadow: 0px 5px 25px rgba(218, 211, 211, 0.3);
+  transition: all 0.3s ease-out 0s;
+}
+
+textarea{
+     background: transparent;
+  border-radius: 10px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 50px;
+  width: 100%;
+  border: 1px solid #BEC0BF;
+  box-shadow: 0px 5px 25px rgba(218, 211, 211, 0.3);
+  transition: all 0.3s ease-out 0s;
+}
+
+
+
+footer{
+    background-color: #F9F9F9;
+    height: 350px;
+}
+
+.form-input{
+    outline-color:#ff8c00;
+}
+
+.bi{
+    color: #5D6676;
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+}
+
+.bi:hover{
+    color: #FD853A;
+}
+
+
+.tools-hover{
+    opacity: 30%;
+    transition: 0.7s;
+}
+
+.tools-hover:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+}
+
+
+
+/* .form-input:focus {
+    outline-color: #ff8c00;
+} */
