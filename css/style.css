@@ -134,6 +134,12 @@ body {
     border-radius: 1rem;
 }
 
+.card:hover{
+    transition: 0.3s ease;
+     box-shadow: 0px 0px 20px 0px rgba(211, 211, 211, 0.5);
+
+}
+
 .card-img-top{
     height: 240px;
 }
