@@ -130,8 +130,12 @@ body {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid #FFF;
-    border-radius: .25rem;
+    border: 1px solid #f2f2f2;
+    border-radius: 1rem;
+}
+
+.card-img-top{
+    height: 240px;
 }
 .btn-view{
     border: none;
